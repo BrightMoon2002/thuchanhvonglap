@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 1 vòng lặp</title>
+</head>
+<body>
+<h1>Bảng cửu chương: </h1>
+<script>
+    let i;
+    let j;
+    let sout = "<table style='border: 1px solid; width: 700px;' cellSpacing='0' cellPadding='3'>";
+    i = 1;
+    j = 2;
+
+    while (i<=9) {
+        sout = sout + "<tr>";
+        while (j<=9) {
+            let a = i * j;
+            sout = sout + "<td style='border: 1px solid'>" + j + "*" + i + "=" + a +"</td>";
+            j++;
+        }
+        sout = sout + "</tr>";
+        j = 2;
+        i++;
+    }
+    sout = sout + "</table>";
+    document.write(sout)
+</script>
+</body>
+</html>
